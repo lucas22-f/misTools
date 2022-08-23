@@ -18,7 +18,7 @@
 'foo foo foo'
 ;
 grid-template-columns: repeat(3,1fr);
-grid-template-rows: auto auto 35% 40% 30vh;
+grid-template-rows: auto auto 35% auto 30vh;
 }
 
 
@@ -175,12 +175,23 @@ grid-template-rows: auto auto 35% 40% 30vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3%;
 }
 .video{
   width: 60%;
 }
 .frame iframe {
   width: 100%;
+}
+
+.p-frame{
+  width: 90%;
+  text-align: justify;
+  padding: 1%;
+  margin: 3%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #212121;
+
 }
 
 
@@ -436,7 +447,7 @@ grid-template-rows: auto auto 30vh;
     height: 300px;
   }
   .indexGrid-layout{
-    grid-template-rows: auto auto auto 30% 30vh;
+    grid-template-rows: auto auto auto auto 30vh;
   }
   .intro{
     width: 100%;

@@ -1,150 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <title>MisTools</title>
-  </head>
 
-  <body>
-    <div class="indexGrid-layout">
-      <!-- NavBar -->
-      <nav class="navBar">
-        <div class="nav1">
-          <!-- Contenedor 1 del nav -->
-          <div class="navLogo">
-            <a href="index.html"><img src="./assets/logo.png" alt="logo" /></a>
-          </div>
-          <label for="toggle" class="btn-menu"
-            ><img src="./assets/bar-menu.png" alt=""
-          /></label>
-          <input type="checkbox" name="toggle" id="toggle" />
-          <ul class="navList">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Pages/nosotros.html">Nosotros</a></li>
-            <li><a href="Pages/productos.html">Productos</a></li>
-            <li><a href="Pages/contacto.html">Contacto</a></li>
-            <li><a href="Pages/clientes.html">Clientes</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>MisTools</title>
+</head>
+
+<body>
+  <div class="indexGrid-layout">
+    <!-- NavBar -->
+    <nav class="navBar">
+      <div class="nav1">
+        <!-- Contenedor 1 del nav -->
+        <div class="navLogo">
+          <a href="index.html"><img src="./assets/logo.png" alt="logo" /></a>
         </div>
+        <label for="toggle" class="btn-menu"><img src="./assets/bar-menu.png" alt="" /></label>
+        <input type="checkbox" name="toggle" id="toggle" />
+        <ul class="navList">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Pages/nosotros.html">Nosotros</a></li>
+          <li><a href="Pages/productos.html">Productos</a></li>
+          <li><a href="Pages/contacto.html">Contacto</a></li>
+          <li><a href="Pages/clientes.html">Clientes</a></li>
+        </ul>
+      </div>
 
-        <!-- Contenedor Barra Separadora -->
-        <div class="barra">
-          <p>ACA VA TEXTO PRAA SEPARAR</p>
-        </div>
-      </nav>
+      <!-- Contenedor Barra Separadora -->
+      <div class="barra">
+        <span>APROVECHA 10% OFF EN TODOS LOS PRODUCTOS</span>
+      </div>
+    </nav>
 
-      <!-- Header -->
-      <section class="h-container">
-        <header class="miHeader">
-          <div class="intro">
-            <h1>TITULO DE INTRODUCCION</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-              voluptate veniam illum rerum exercitationem natus ipsam nihil
-              totam assumenda iusto, expedita fugiat dignissimos ullam fugit
-              modi magnam ab beatae amet? Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Rerum perspiciatis molestiae ducimus
-              quae dolorum obcaecati in voluptates aliquid quibusdam, ratione
-              illo soluta suscipit
-            </p>
-          </div>
-        </header>
-      </section>
-
-      <!-- Tarjetas Productos -->
-      <section class="cardProducts">
-        <div>
-          <h2>Productos Estrella</h2>
-        </div>
-        <div class="cardContainer">
-          <div class="card">
-            <img src="./assets/d1.png" alt="" />
-            <p>card1</p>
-          </div>
-
-          <div class="card">
-            <img src="./assets/d1.png" alt="" />
-            <p>card2</p>
-          </div>
-
-          <div class="card">
-            <img src="./assets/d1.png" alt="" />
-            <p>card3</p>
-          </div>
-
-          <div class="card">
-            <img src="./assets/d1.png" alt="" />
-            <p>card4</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Iframe -->
-      
-      <div class="frame">
-        <h1>Calidad de primera</h1>
-        <div class="video">
-          <iframe
-            width="780"
-            height="564"
-            src="https://www.youtube.com/embed/G19CJTUJHso"
-            title="Hasta donde tú quieras llegar con DEWALT"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="p-frame">
-          <h2>Visitanos</h2>
+    <!-- Header -->
+    <section class="h-container">
+      <header class="miHeader">
+        <div class="intro">
+          <h1>TITULO DE INTRODUCCION</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quos
-            amet corporis esse, beatae eos deserunt facilis. Dolorem nihil
-            inventore accusamus, voluptas sit exercitationem consequuntur
-            sapiente libero harum. Officia, excepturi. Itaque molestiae quaerat
-            laboriosam aperiam, cumque tempore ducimus voluptatum magnam facere
-            quos omnis minima repellat repellendus. Placeat vel ad similique,
-            maxime, impedit quo rerum velit odit sequi pariatur iusto
-            asperiores. Quis dolore vero sed at modi aut, facere placeat quas
-            provident ea nulla nisi unde ad odio doloremque ut eveniet adipisci
-            sequi id esse magnam. Aperiam illo error quasi esse. Adipisci,
-            dignissimos aut voluptatum enim nihil, reiciendis officiis possimus
-            recusandae quos fugiat, totam et beatae dicta labore necessitatibus
-            saepe distinctio! Nisi maxime, molestiae nihil delectus dolores
-            quisquam exercitationem voluptatum voluptate.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
+            voluptate veniam illum rerum exercitationem natus ipsam nihil
+            totam assumenda iusto, expedita fugiat dignissimos ullam fugit
+            modi magnam ab beatae amet? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Rerum perspiciatis molestiae ducimus
+            quae dolorum obcaecati in voluptates aliquid quibusdam, ratione
+            illo soluta suscipit
           </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104832.50040572701!2d-58.62070590816467!3d-34.805548432931595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd0cdf771695f%3A0xc27d4d9c9c7f589d!2sEzeiza%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661276278170!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </header>
+    </section>
+
+    <!-- Tarjetas Productos -->
+    <section class="cardProducts ">
+      <div class="container-fluid p-2 text-center bg-dark text-light">
+        <h2>Productos Estrella</h2>
+      </div>
+      <div class="cardContainer container pt-5">
+        <div class="card">
+          <img src="./assets/d1.png" class="im" alt="" />
+          <p>card1</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/d1.png" class="im" alt="" />
+          <p>card2</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/d1.png" class="im" alt="" />
+          <p>card3</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/d1.png" class="im" alt="" />
+          <p>card4</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Iframe -->
+
+    <div class="frame">
+      <div class="container-fluid bg-dark text-light p-2 mb-5">
+        <h2>Calidad de primera</h2>
+      </div>
+
+      <div class="video" data-aos="fade-up" data-aos-duration="1300">
+        <iframe width="780" height="564" src="https://www.youtube.com/embed/G19CJTUJHso"
+          title="Hasta donde tú quieras llegar con DEWALT" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="p-frame" data-aos="zoom-in" data-aos-duration="1000">
+        <h2>Visitanos</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quos
+          amet corporis esse, beatae eos deserunt facilis. Dolorem nihil
+          inventore accusamus, voluptas sit exercitationem consequuntur
+          sapiente libero harum. Officia, excepturi. Itaque molestiae quaerat
+          laboriosam aperiam, cumque tempore ducimus voluptatum magnam facere
+          quos omnis minima repellat repellendus. Placeat vel ad similique,
+          maxime, impedit quo rerum velit odit sequi pariatur iusto
+          asperiores. Quis dolore vero sed at modi aut, facere placeat quas
+          provident ea nulla nisi unde ad odio doloremque ut eveniet adipisci
+          sequi id esse magnam. Aperiam illo error quasi esse. Adipisci,
+          dignissimos aut voluptatum enim nihil, reiciendis officiis possimus
+          recusandae quos fugiat, totam et beatae dicta labore necessitatibus
+          saepe distinctio! Nisi maxime, molestiae nihil delectus dolores
+          quisquam exercitationem voluptatum voluptate.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104832.50040572701!2d-58.62070590816467!3d-34.805548432931595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd0cdf771695f%3A0xc27d4d9c9c7f589d!2sEzeiza%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661276278170!5m2!1ses-419!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="carr container-fluid bg-dark text-light p-lg-5">
+      <div class="container p-2 mt-2 text-center">
+        <h2>Confia en nuestros productos</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/carr1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/carr2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/carr3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="col-6">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex et quo doloribus consequuntur aspernatur a ea
+            iure, deleniti vitae tempore vero illum! Nihil, nulla quas! Vitae mollitia molestiae eius soluta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="miFooter container-fluid text-center">
+   
+    <div class="contfooter container p-5 ">
+      <div class="row respon-foo">
+        <div class="col-4 foolink">
+          <p >Nosotros</p>
+          <p >Como Contactarnos</p>
+        </div>
+
+
+        <div class="col-4 foolink">
+          <p>Productos</p>
+          <p>Informacion</p>
+        </div>
+
+
+        <div class="col-4 foolink">
+          <p >Clientes</p>
+          <p >Reseñas</p>
         </div>
       </div>
 
-      <!-- Footer -->
-      <footer class="miFooter">
-        <div class="contfooter">
-          <div>
-            <p>Ejemplo xd</p>
-            <p>Ejemplo xd</p>
-          </div>
-
-          <div>
-            <p>Ejemplo xd</p>
-            <p>Ejemplo xd</p>
-          </div>
-
-          <div>
-            <p>Ejemplo xd</p>
-            <p>Ejemplo xd</p>
-          </div>
-        </div>
-        <div class="socialsf">
-          <a href="#"><img src="" alt="socials" /></a>
-          <a href="#"><img src="" alt="socials" /></a>
-          <a href=""><img src="" alt="socials" /></a>
-        </div>
-      </footer>
     </div>
-  </body>
+    <div class="socialsf pb-5">
+      <a href="#"><i class="bi bi-instagram s"></i></a>
+      <a href="#"><i class="bi bi-facebook s"></i></a>
+      <a href="#"><i class="bi bi-whatsapp s"></i></a>
+    </div>
+    <span class="fin p-4">Lucas Figueroa 2022&copy;</span>
+    
+  </footer>
+  
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

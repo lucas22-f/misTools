@@ -128,7 +128,7 @@ grid-template-rows: auto auto auto auto auto auto;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background-color: #a7a385;
+  background-color: #bdbcbc;
   padding-bottom: 3%;
 }
 .card {
@@ -298,12 +298,15 @@ grid-template-rows: auto auto auto;
  grid-template-areas: 
 'nav nav nav'
 'cards cards cards'
+'pago pago pago'
 'foo foo foo'
 ;
 grid-template-columns: repeat(3,1fr);
 grid-template-rows: auto auto auto;
 }
-
+.pago{
+  grid-area: pago;
+}
 
 /* Contacto */
 
@@ -312,6 +315,7 @@ grid-template-rows: auto auto auto;
   grid-template-areas: 
  'nav nav nav'
  'content content content'
+ 'add add add'
  'foo foo foo'
  ;
  grid-template-columns: repeat(3,1fr);
@@ -344,7 +348,9 @@ grid-template-rows: auto auto auto;
   border: none;
   padding: 5px;
 }
-
+.add{
+  grid-area: add;
+}
 .form-item2{
   height: 50%;
   padding: 5px;

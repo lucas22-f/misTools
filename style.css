@@ -115,11 +115,6 @@ grid-template-rows: auto auto auto auto auto auto;
   align-items: center;
 }
 
-@media (max-width:566px){
-  
-}
-
-
 /* Tarjetas Productos */
 .cardProducts {
   grid-column: 1/4;
@@ -227,9 +222,11 @@ grid-template-rows: auto auto auto auto auto auto;
   justify-content: center;
   color: #fff;
   width: 30%;
+  
 }
 .foolink p:hover{
   color: #ffc107;
+  
   cursor: pointer;
 }
 .socialsf{
@@ -238,7 +235,9 @@ grid-template-rows: auto auto auto auto auto auto;
 }
 .socialsf a{
   margin: 0 20% 0 20%;
+  transition: all 1s;
 }
+
 .s{
   font-size: 2rem;
   color: #7e7e7e;
@@ -247,6 +246,7 @@ grid-template-rows: auto auto auto auto auto auto;
 .s:hover{
   color: #ffc107;
 }
+
 .fin{
   font-size: 12px;
 }
@@ -319,7 +319,7 @@ grid-template-rows: auto auto auto;
  'foo foo foo'
  ;
  grid-template-columns: repeat(3,1fr);
- grid-template-rows: auto auto auto;
+ grid-template-rows: auto auto auto auto;
 }
 .contact{
   grid-area: content;
@@ -328,52 +328,31 @@ grid-template-rows: auto auto auto;
   justify-content: center;
   align-items: center;
   background-color:#ffc107;
-  height: 70vh;
+  padding: 3%;
 }
-
-.form-con fieldset{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30vw;
-  height: 50vh;
-  border-radius: 20px;
-  background-color: rgba(18, 18, 18, 0.353);
-  border: 1px solid rgb(192, 187, 187);
+.miForm{
+  width: 40vw;
 }
-.form-item{
-  width: 70%;
-  height: 35px;
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
+#mi-textarea{
+  resize: none;
 }
 .add{
   grid-area: add;
 }
-.form-item2{
-  height: 50%;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  width: 70%;
+@keyframes rotation{
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
 }
-.form-item:focus { outline: none;}
-.form-item2:focus { outline: none;}
-.bt{
-  width: 70%;
-  margin-top: 3%;
-}
-.bt input{
-  width: 100%;
-  padding: 6px;
-  font-size: 15px;
+
+.animated:hover{
   cursor: pointer;
-  border: none;
-  border-radius: 3px;
-}
-.bt input:hover{
-  background-color: #e0dfdf;
+  
+  animation: rotation 5s infinite linear;
+ 
 }
 
 /* Clientes */
@@ -394,22 +373,19 @@ grid-template-rows: auto auto auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  margin: 0px 4% 4% 4%;
+  background-color: #ffc107;
+ 
 }
-.g-clientes{
-  display: grid;
-  gap: 30px;
-  width: 90%;
-}
+
 .item-client{
   display: flex;
-  padding: 3%;
+  padding: 2%;
+  margin: 3%;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  border: 1px solid #212121;
-  border-radius: 6px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  
 }
 .c-img{
   display: flex;
@@ -466,10 +442,15 @@ grid-template-rows: auto auto auto;
     width: 50%;
   }
 
- 
   .us-p{
     width: 100%;
     padding: 3%;
+  }
+
+  /* Contacto */
+
+  .miForm{
+    width: 50%;
   }
 
 }
@@ -499,19 +480,11 @@ grid-template-rows: auto auto auto;
     flex-direction: column;
   }
   /* Contacto */
-  .form-con{
-    width: 100%;
-    padding: 3%;
-    
-  }
-  .form-con fieldset{
-    width: 100%;
+  .miForm{
+    width: 80%;
   }
 
   /* Clientes */
-  .g-clientes{
-    width: 100%;
-  }
   .item-client{
     flex-direction: column;
   }

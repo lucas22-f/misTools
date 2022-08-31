@@ -52,26 +52,24 @@
       <div class="contact">
         <h1>Contacto</h1>
 
-        <form class="form-con" action="">
-          <fieldset>
-            <p>Email:</p>
-            <label for="email"></label>
-            <input class="form-item" type="email" />
-
-            <p>Mensaje:</p>
-            <label for="textbox"></label>
-            <textarea class="form-item2" name="textbox"></textarea>
-            <div class="bt">
-              <input type="submit" />
-            </div>
-          </fieldset>
+        <form class="p-5 border border-dark rounded-2 miForm">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email:</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensaje:</label>
+            <textarea class="form-control"  id="mi-textarea" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-dark mt-3">Enviar</button>
         </form>
       </div>
 
       <div class="container add">
         <div class="row align-items-center">
-          <div class="col-md-6  navLogo">
-            <img src="../assets/logo.png"class="img-fluid" alt="" />
+          <div class="col-md-6  navLogo ">
+            <img src="../assets/logo.png"class="img-fluid animated" alt="" />
           </div>
           <div class="col-md-6">
             <p>

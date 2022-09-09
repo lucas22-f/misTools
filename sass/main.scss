@@ -1,0 +1,15 @@
+
+@import "_vars";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+  }
+  @import "./nosotros_scss/usGrid-layt";
+  @import "./nosotros_scss/nav";
+  @import "./nosotros_scss//content";
+  @import "./nosotros_scss/footer";
+  @import "./nosotros_scss/mediaQ";

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira", sans-serif;
+}
+
+.usGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "content content content" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+/* Nav with SASS */
+.navBar {
+  display: flex;
+  flex-direction: column;
+  grid-area: nav;
+  grid-column: 1/4;
+  background-color: #fedb14;
+}
+.navBar .nav1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navBar .nav1 #toggle {
+  display: none;
+}
+.navBar .nav1 .btn-menu {
+  display: none;
+}
+.navBar .nav1 .navLogo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.navBar .nav1 .navLogo img {
+  width: 100%;
+}
+.navBar .nav1 .navList {
+  display: flex;
+  list-style: none;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.navBar .nav1 .navList li {
+  width: 160px;
+  height: 36px;
+  text-align: center;
+}
+.navBar .nav1 .navList li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #212121;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.navBar .nav1 .navList li a:hover {
+  background-color: rgba(33, 33, 33, 0.0745098039);
+  border-radius: 5px;
+}
+.navBar .barra {
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  padding-top: 3%;
+  grid-area: content;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffecb3;
+}
+.content .us-img {
+  width: 40vw;
+  border-radius: 15px;
+}
+.content .us-img img {
+  width: 100%;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 15px;
+}
+
+.us-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 3%;
+}
+
+/* Footer with SASS */
+.miFooter {
+  grid-area: foo;
+  grid-column: 1/4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212121;
+}
+.miFooter .contfooter {
+  width: 100%;
+  font-size: 14px;
+  justify-content: space-around;
+}
+.miFooter .row .foolink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.miFooter .row .foolink p {
+  justify-content: center;
+  color: #fff;
+  width: 30%;
+}
+.miFooter .row .foolink p:hover {
+  color: #fedb14;
+  cursor: pointer;
+}
+.miFooter .socialsf {
+  display: flex;
+  justify-content: center;
+}
+.miFooter .socialsf a {
+  margin: 0 20% 0 20%;
+  transition: all 1s;
+}
+.miFooter .socialsf .s {
+  font-size: 2rem;
+  color: #7e7e7e;
+  transition: all 0.5s;
+}
+.miFooter .socialsf .s:hover {
+  color: #fedb14;
+}
+
+@media (max-width: 1000px) {
+  .navBar .nav1 {
+    flex-direction: column;
+  }
+  .navBar .nav1 .btn-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+  }
+  .navBar .nav1 .btn-menu img {
+    width: 100%;
+  }
+  .navBar .nav1 .navList {
+    flex-direction: column;
+    max-height: 0;
+    transition: all 0.5s;
+  }
+  .navBar .nav1 #toggle:checked + .navList {
+    max-height: 600px;
+  }
+}
+@media (max-width: 766px) {
+  .content .us-img {
+    width: auto;
+  }
+  .respon-foo {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

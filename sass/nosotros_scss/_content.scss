@@ -1,0 +1,31 @@
+@import "../vars";
+
+.content{
+    display: flex;
+    padding-top: 3%;
+    grid-area: content;
+    justify-content:  space-around;
+    align-items: center;
+    background-color:$bgColor;
+
+
+    .us-img{
+        width: 40vw;
+        border-radius: 15px;
+        img{
+            width: 100%;
+            box-shadow: 3px 3px 10px black;
+            border-radius: 15px; 
+        }
+    }
+
+}
+
+.us-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 3%;
+  }

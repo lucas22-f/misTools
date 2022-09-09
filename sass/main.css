@@ -75,21 +75,30 @@
 }
 
 .content {
-  display: flex;
   padding-top: 3%;
   grid-area: content;
-  justify-content: space-around;
   align-items: center;
   background-color: #ffecb3;
 }
 .content .us-img {
-  width: 40vw;
+  width: 700px;
   border-radius: 15px;
 }
 .content .us-img img {
   width: 100%;
   box-shadow: 3px 3px 10px black;
   border-radius: 15px;
+}
+.content .marcas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url("../../assets/h1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .marcas__blur { /* IMPLEMENTAMOS OPERADOR   &  */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .us-p {
@@ -171,9 +180,6 @@
   }
 }
 @media (max-width: 766px) {
-  .content .us-img {
-    width: auto;
-  }
   .respon-foo {
     flex-direction: column;
   }

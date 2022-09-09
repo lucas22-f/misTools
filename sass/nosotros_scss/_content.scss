@@ -1,22 +1,40 @@
 @import "../vars";
 
 .content{
-    display: flex;
+
     padding-top: 3%;
     grid-area: content;
-    justify-content:  space-around;
     align-items: center;
     background-color:$bgColor;
 
 
     .us-img{
-        width: 40vw;
+        width: 700px;
         border-radius: 15px;
         img{
             width: 100%;
             box-shadow: 3px 3px 10px black;
             border-radius: 15px; 
         }
+    }
+
+    .marcas{
+        
+        background: {
+            image: linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.568)),url("../../assets/h1.jpg");
+            
+            repeat:no-repeat;
+            size: cover;
+            
+            
+        };
+        &__blur{/* IMPLEMENTAMOS OPERADOR   &  */
+            backdrop-filter: blur(10px);
+            padding-top: 6%;
+            padding-bottom: 6%;
+        }
+        
+       
     }
 
 }

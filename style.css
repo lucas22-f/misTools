@@ -252,44 +252,7 @@ grid-template-rows: auto auto auto auto auto auto;
 }
 /* ------------------FIN INDEX--------------- */
 
-/* Nosotros */
-
-.usGrid-layout{
-  display: grid;
- grid-template-areas: 
-'nav nav nav'
-'content content content'
-'foo foo foo'
-;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: auto auto auto;
-}
-.content{
-  display: flex;
-  padding-top: 3%;
-  grid-area: content;
-  justify-content:  space-around;
-  align-items: center;
-  background-color:#ffecb3
-}
-.us-p{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  margin: 3%;
-}
-.us-img{
-  width: 40vw;
-  border-radius: 15px;
-}
-.us-img img{
-  width: 100%;
-  box-shadow: 3px 3px 10px black;
-  border-radius: 15px;
-}
-
+/* Nosotros REMOVIDO.  Cambiado por estilos con SASS. */
 
 
 /* Productos */
@@ -442,11 +405,6 @@ grid-template-rows: auto auto auto;
     width: 50%;
   }
 
-  .us-p{
-    width: 100%;
-    padding: 3%;
-  }
-
   /* Contacto */
 
   .miForm{
@@ -469,11 +427,6 @@ grid-template-rows: auto auto auto;
   }
   .intro{
     width: 100%;
-  }
-
-   /* Nosotros */
-   .us-img{
-    width: auto;
   }
 
   .respon-foo{

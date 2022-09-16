@@ -82,7 +82,7 @@
 }
 .h-container .miHeader {
   color: white;
-  background-image: url("../../assets/h1.jpg");
+  background-image: url("../assets/h1.jpg");
   background-size: cover;
   background-position: center;
 }

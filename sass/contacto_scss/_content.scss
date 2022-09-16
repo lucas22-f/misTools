@@ -1,0 +1,33 @@
+.contact{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffc107;
+    padding: 3%;
+
+    .miForm{
+        width: 40vw;
+    }
+    #mi-textarea{
+        resize: none;
+    }
+}
+@keyframes rotation{
+    from {
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+}
+.animated:hover{
+    cursor: pointer;
+    
+    animation: rotation 5s infinite linear;
+   
+}
+.add{
+    grid-area: add;
+}

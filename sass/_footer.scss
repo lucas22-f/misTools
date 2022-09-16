@@ -1,5 +1,12 @@
-@import "../vars";
+@import "./vars";
 /* Footer with SASS */
+
+$red-social:(
+    fb: #2d52a3,
+    ig: #bc2a8d,
+    wpp: #1da850,
+);
+
 .miFooter{
    
     grid-area: foo;
@@ -20,12 +27,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        p{
+        a{
             justify-content: center;
+            text-decoration: none;
             color: #fff;
-            width: 30%;
+            margin: 10px;
+            
         }
-        p:hover{
+        a:hover{
             color:$mainColor;
             cursor: pointer;
         }
@@ -38,13 +47,17 @@
             margin: 0 20% 0 20%;
             transition: all 1s;
         }
-        .s{
-            font-size: 2rem;
-            color: #7e7e7e;
-            transition: all .5s; 
-        }
-        .s:hover{
-            color:$mainColor;
-        }
+       
+        
+    }
+}
+@each $nombre,$valor in $red-social {
+    .s-#{$nombre}{
+        font-size: 2rem;
+        color: #7e7e7e;
+        transition: all .5s; 
+    }
+    .s-#{$nombre}:hover {
+        color: $valor;
     }
 }

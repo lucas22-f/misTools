@@ -1,0 +1,126 @@
+/* Index - Header */
+@import "../vars";
+
+.h-container {
+  grid-column: 1/4;
+  grid-area: h;
+
+  .miHeader {
+    color: white;
+    background-image: url("../../assets/h1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 90vh;
+      padding: 3%;
+      justify-content: center;
+      background-color: rgba(18, 18, 18, 0.925);
+      align-items: center;
+
+      
+    }
+  }
+}
+.boton{
+    margin: 30px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px $mainColor solid;
+    color: $mainColor;
+    text-decoration: none;
+    transition: all .1s;
+  }
+  .boton:hover{
+    background-color: black;
+    color: #fff;
+    box-shadow: 0px 0px 5px white;
+  }
+/* Index - Cards */
+.cardProducts {
+    grid-column: 1/4;
+    grid-area:cards;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #858585;
+    padding-bottom: 3%;
+    
+    .card {
+        text-align: center;
+        transition: all .3s;
+        border: #bdbcbc 1px solid;
+      }
+    .card:hover{
+        box-shadow: 3px 3px 10px #212121;
+        cursor: pointer;
+        transform: scale(102%);
+    }
+    .im{
+        border-bottom: 1px solid #dbd7d7;
+    }
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* Agregamos funcion extend para extender los estilos creados
+        Anteriormente :) */
+
+    .boton-cards{
+        @extend .boton;
+        background-color: black;
+        color: #fff;
+        transition: all 500ms;
+    }
+    .boton-cards:hover{
+        color: $mainColor;
+        box-shadow: 0px 0px 10px $mainColor;
+    
+        
+    }
+    
+}
+
+/* Index - Iframe */
+
+.frame {
+    grid-column: 1/4;
+    grid-area:if;
+    background-color: #ffc107;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .video{
+        width: 60%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .p-frame{
+        width: 100%;
+        text-align: justify;
+        padding: 5%;
+        margin: 3%;
+        color: #dbd7d7;
+        box-shadow: 1px 1px 20px black;
+      
+    }
+    
+}
+/* Index-Carousel */
+.carr{
+    grid-area: carr;
+}
+

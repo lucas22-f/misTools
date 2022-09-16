@@ -7,13 +7,6 @@
   font-family: "Saira", sans-serif;
 }
 
-.usGrid-layout {
-  display: grid;
-  grid-template-areas: "nav nav nav" "content content content" "foo foo foo";
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
-}
-
 /* Nav with SASS */
 .navBar {
   display: flex;
@@ -74,6 +67,135 @@
   text-align: center;
 }
 
+/* Index */
+.indexGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "h h h" "cards cards cards" "if if if" "carr carr carr" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+/* Index - Header */
+.h-container {
+  grid-column: 1/4;
+  grid-area: h;
+}
+.h-container .miHeader {
+  color: white;
+  background-image: url("../../assets/h1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.h-container .miHeader .intro {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 90vh;
+  padding: 3%;
+  justify-content: center;
+  background-color: rgba(18, 18, 18, 0.925);
+  align-items: center;
+}
+
+.boton, .cardProducts .boton-cards {
+  margin: 30px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px #fedb14 solid;
+  color: #fedb14;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.boton:hover, .cardProducts .boton-cards:hover {
+  background-color: black;
+  color: #fff;
+  box-shadow: 0px 0px 5px white;
+}
+
+/* Index - Cards */
+.cardProducts {
+  grid-column: 1/4;
+  grid-area: cards;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #858585;
+  padding-bottom: 3%;
+  /* Agregamos funcion extend para extender los estilos creados
+      Anteriormente :) */
+}
+.cardProducts .card {
+  text-align: center;
+  transition: all 0.3s;
+  border: #bdbcbc 1px solid;
+}
+.cardProducts .card:hover {
+  box-shadow: 3px 3px 10px #212121;
+  cursor: pointer;
+  transform: scale(102%);
+}
+.cardProducts .im {
+  border-bottom: 1px solid #dbd7d7;
+}
+.cardProducts .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.cardProducts .boton-cards {
+  background-color: black;
+  color: #fff;
+  transition: all 500ms;
+}
+.cardProducts .boton-cards:hover {
+  color: #fedb14;
+  box-shadow: 0px 0px 10px #fedb14;
+}
+
+/* Index - Iframe */
+.frame {
+  grid-column: 1/4;
+  grid-area: if;
+  background-color: #ffc107;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.frame .video {
+  width: 60%;
+}
+.frame iframe {
+  width: 100%;
+}
+.frame .p-frame {
+  width: 100%;
+  text-align: justify;
+  padding: 5%;
+  margin: 3%;
+  color: #dbd7d7;
+  box-shadow: 1px 1px 20px black;
+}
+
+/* Index-Carousel */
+.carr {
+  grid-area: carr;
+}
+
+/* Nosotros */
+.usGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "content content content" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
 .content {
   padding-top: 3%;
   grid-area: content;
@@ -110,6 +232,160 @@
   margin: 3%;
 }
 
+/* Productos */
+.prodGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "cards cards cards" "pago pago pago" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+.pago {
+  grid-area: pago;
+}
+
+.cardProducts .cardsTittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.cardProducts .cardsTittle input {
+  padding: 3%;
+  margin-top: 20px;
+  height: 40px;
+  width: 300px;
+  border-radius: 25px;
+  border: 1px solid #8e8d8d;
+}
+
+.bot, .bot-close {
+  margin: 30px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px #fedb14 solid;
+  color: #f7e09e;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.bot:hover, .bot-close:hover {
+  box-shadow: 0px 0px 10px #fedb14;
+}
+
+.bot-close {
+  background-color: rgb(231, 63, 63);
+  border: 2px #212121 solid;
+  transition: all 0.3s;
+}
+
+.bot-close:hover {
+  box-shadow: 0px 0px 7px rgb(231, 63, 63);
+}
+
+.inf {
+  margin: 0 10px 0 10px;
+}
+
+.inf:hover {
+  background-color: #212121;
+  color: #fedb14;
+  padding: 3%;
+  margin: 0 10px 0 10px;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+/* Contacto */
+.contact {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc107;
+  padding: 3%;
+}
+.contact .miForm {
+  width: 40vw;
+}
+.contact #mi-textarea {
+  resize: none;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.animated:hover {
+  cursor: pointer;
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+}
+
+.add {
+  grid-area: add;
+}
+
+.conctGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "content content content" "add add add" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto;
+}
+
+/* Clientes */
+.clientes {
+  display: flex;
+  grid-area: content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc107;
+}
+.clientes .item-client {
+  display: flex;
+  padding: 2%;
+  margin: 3%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.clientes .item-client .c-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clientes .item-client .c-text {
+  width: 60%;
+  padding: 3%;
+}
+
+.clientGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "content content content" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
 /* Footer with SASS */
 .miFooter {
   grid-area: foo;
@@ -130,12 +406,13 @@
   flex-direction: column;
   align-items: center;
 }
-.miFooter .row .foolink p {
+.miFooter .row .foolink a {
   justify-content: center;
+  text-decoration: none;
   color: #fff;
-  width: 30%;
+  margin: 10px;
 }
-.miFooter .row .foolink p:hover {
+.miFooter .row .foolink a:hover {
   color: #fedb14;
   cursor: pointer;
 }
@@ -147,13 +424,35 @@
   margin: 0 20% 0 20%;
   transition: all 1s;
 }
-.miFooter .socialsf .s {
+
+.s-fb {
   font-size: 2rem;
   color: #7e7e7e;
   transition: all 0.5s;
 }
-.miFooter .socialsf .s:hover {
-  color: #fedb14;
+
+.s-fb:hover {
+  color: #2d52a3;
+}
+
+.s-ig {
+  font-size: 2rem;
+  color: #7e7e7e;
+  transition: all 0.5s;
+}
+
+.s-ig:hover {
+  color: #bc2a8d;
+}
+
+.s-wpp {
+  font-size: 2rem;
+  color: #7e7e7e;
+  transition: all 0.5s;
+}
+
+.s-wpp:hover {
+  color: #1da850;
 }
 
 @media (max-width: 1000px) {
@@ -182,5 +481,35 @@
 @media (max-width: 766px) {
   .respon-foo {
     flex-direction: column;
+    align-items: center;
+  }
+  .video {
+    width: 70%;
+  }
+  .video iframe {
+    height: 300px;
+  }
+  /* contacto */
+  .contact .miForm {
+    width: 80%;
+  }
+  /* clientes */
+  .clientes .item-client {
+    flex-direction: column;
+  }
+  .clientes .item-client .c-text {
+    width: 100%;
+  }
+  .clientes .c-img {
+    width: 60%;
+  }
+  .clientes .c-img img {
+    width: 100%;
+  }
+  .indexGrid-layout {
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .h-container .miHeader .intro {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

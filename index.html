@@ -7,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./sass/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- SEO -->
+  <meta name="description" content="tienda de herramientas para el trabajo">
+  <meta name="keywords" content="herramientas,ferreteria,taladros,">
   <title>MisTools</title>
 </head>
 
@@ -43,16 +46,16 @@
     <section class="h-container">
       <header class="miHeader">
         <div class="intro">
-          <h1>TITULO DE INTRODUCCION</h1>
+          <h1>Las Mejores Herramientas del mercado</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-            voluptate veniam illum rerum exercitationem natus ipsam nihil
-            totam assumenda iusto, expedita fugiat dignissimos ullam fugit
-            modi magnam ab beatae amet? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Rerum perspiciatis molestiae ducimus
-            quae dolorum obcaecati in voluptates aliquid quibusdam, ratione
-            illo soluta suscipit
+            Hola somos <strong>MisTools</strong>  vendemos productos de la máxima calidad y al mejor precio. Sabemos que cada cliente 
+            tiene sus propias necesidades, y merece una atención personalizada y ágil que le permita 
+            conseguir los mejores resultados, por ello contamos con personas dedicadas exclusivamente a dar 
+            un servicio inmejorable a los usuarios que visitan nuestra tienda online y con un catálogo diversificado en productos. 
+       
           </p>
+          <a href="Pages/nosotros.html" class="boton">Conoce Mas</a>
+          
         </div>
       </header>
     </section>
@@ -63,26 +66,175 @@
         <h2>Productos Estrella</h2>
       </div>
       <div class="cardContainer container pt-5">
-        <div class="card">
-          <img src="./assets/d1.png" class="im" alt="" />
-          <p>card1</p>
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../assets/d1.png" alt="productos" />
+          <p>TaladroABCD</p>
+          
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TaladroABCDEF#</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <img class="img-fluid col-12 col-md-4" src="../assets/d1.png" alt="producto">
+                  <div class="col-12 col-xl-6">
+                    
+                    <h4>Taladro CDEF#</h4>
+                    <h3>$30.000</h3>
+                  <ul>
+                    <li>Velocidad máxima de rotación: 1500rpm.</li>
+                    <li>Con batería incluida de Li-ion.</li>
+                    <li>Tiempo de carga de la batería: 45m.</li>
+                    <li>Posee control de torque.</li>
+                    <li>Tiene luz led.</li>
+                  </ul>
+                  <p>Ligero y fácil de manejar
+                    Al no haber cables de por medio, vas a sentirte más cómodo al manipularlo. Además, 
+                    causa menos fatiga tras un uso intensivo. No se presentarán problemas como no encontrar 
+                    un contacto o que el cable sea muy corto para el área donde lo vas a utilizar.</p>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="bot-close" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="bot">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="./assets/d1.png" class="im" alt="" />
-          <p>card2</p>
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../assets/d1.png" alt="productos" />
+          <p>TaladroABCD</p>
+          
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TaladroABCDEF#</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <img class="img-fluid col-12 col-md-4" src="../assets/d1.png" alt="producto">
+                  <div class="col-12 col-xl-6">
+                    
+                    <h4>Taladro CDEF#</h4>
+                    <h3>$30.000</h3>
+                  <ul>
+                    <li>Velocidad máxima de rotación: 1500rpm.</li>
+                    <li>Con batería incluida de Li-ion.</li>
+                    <li>Tiempo de carga de la batería: 45m.</li>
+                    <li>Posee control de torque.</li>
+                    <li>Tiene luz led.</li>
+                  </ul>
+                  <p>Ligero y fácil de manejar
+                    Al no haber cables de por medio, vas a sentirte más cómodo al manipularlo. Además, 
+                    causa menos fatiga tras un uso intensivo. No se presentarán problemas como no encontrar 
+                    un contacto o que el cable sea muy corto para el área donde lo vas a utilizar.</p>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="bot-close" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="bot">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="./assets/d1.png" class="im" alt="" />
-          <p>card3</p>
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../assets/d1.png" alt="productos" />
+          <p>TaladroABCD</p>
+          
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TaladroABCDEF#</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <img class="img-fluid col-12 col-md-4" src="../assets/d1.png" alt="producto">
+                  <div class="col-12 col-xl-6">
+                    
+                    <h4>Taladro CDEF#</h4>
+                    <h3>$30.000</h3>
+                  <ul>
+                    <li>Velocidad máxima de rotación: 1500rpm.</li>
+                    <li>Con batería incluida de Li-ion.</li>
+                    <li>Tiempo de carga de la batería: 45m.</li>
+                    <li>Posee control de torque.</li>
+                    <li>Tiene luz led.</li>
+                  </ul>
+                  <p>Ligero y fácil de manejar
+                    Al no haber cables de por medio, vas a sentirte más cómodo al manipularlo. Además, 
+                    causa menos fatiga tras un uso intensivo. No se presentarán problemas como no encontrar 
+                    un contacto o que el cable sea muy corto para el área donde lo vas a utilizar.</p>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="bot-close" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="bot">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <img src="./assets/d1.png" class="im" alt="" />
-          <p>card4</p>
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../assets/d1.png" alt="productos" />
+          <p>TaladroABCD</p>
+          
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TaladroABCDEF#</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <img class="img-fluid col-12 col-md-4" src="../assets/d1.png" alt="producto">
+                  <div class="col-12 col-xl-6">
+                    
+                    <h4>Taladro CDEF#</h4>
+                    <h3>$30.000</h3>
+                  <ul>
+                    <li>Velocidad máxima de rotación: 1500rpm.</li>
+                    <li>Con batería incluida de Li-ion.</li>
+                    <li>Tiempo de carga de la batería: 45m.</li>
+                    <li>Posee control de torque.</li>
+                    <li>Tiene luz led.</li>
+                  </ul>
+                  <p>Ligero y fácil de manejar
+                    Al no haber cables de por medio, vas a sentirte más cómodo al manipularlo. Además, 
+                    causa menos fatiga tras un uso intensivo. No se presentarán problemas como no encontrar 
+                    un contacto o que el cable sea muy corto para el área donde lo vas a utilizar.</p>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="bot-close" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="bot">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <a href="/Pages/productos.html" class="boton-cards">Ver mas productos</a>
     </section>
 
     <!-- Iframe -->
@@ -98,23 +250,14 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
-      <div class="p-frame" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container-fluid p-frame bg-dark" data-aos="zoom-in" data-aos-duration="1000">
         <h2>Visitanos</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quos
-          amet corporis esse, beatae eos deserunt facilis. Dolorem nihil
-          inventore accusamus, voluptas sit exercitationem consequuntur
-          sapiente libero harum. Officia, excepturi. Itaque molestiae quaerat
-          laboriosam aperiam, cumque tempore ducimus voluptatum magnam facere
-          quos omnis minima repellat repellendus. Placeat vel ad similique,
-          maxime, impedit quo rerum velit odit sequi pariatur iusto
-          asperiores. Quis dolore vero sed at modi aut, facere placeat quas
-          provident ea nulla nisi unde ad odio doloremque ut eveniet adipisci
-          sequi id esse magnam. Aperiam illo error quasi esse. Adipisci,
-          dignissimos aut voluptatum enim nihil, reiciendis officiis possimus
-          recusandae quos fugiat, totam et beatae dicta labore necessitatibus
-          saepe distinctio! Nisi maxime, molestiae nihil delectus dolores
-          quisquam exercitationem voluptatum voluptate.
+          En MisTools ofrecemos un amplio catálogo de productos disponibles en nuestro portal web. 
+          Comercializamos grandes marcas dentro de las herramientas eléctricas, destacando algunas como Makita, Karcher, Bosch, Virutex, Dewalt, Simes, Cevik, Campeón, Anova, Ayerbe, etc.
+           Estas ayudaran a que el trabajo se realice de una manera más cómoda, independientemente del sector en el que se utilice, 
+           ya sea construcción, jardinería, forestal, instalación, fontanería, electricidad, fijación, etc.
+           Podes visitarnos en la siguienta ubicacion:
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104832.50040572701!2d-58.62070590816467!3d-34.805548432931595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd0cdf771695f%3A0xc27d4d9c9c7f589d!2sEzeiza%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661276278170!5m2!1ses-419!2sar"
@@ -155,9 +298,11 @@
         </div>
 
 
-        <div class="col-6">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex et quo doloribus consequuntur aspernatur a ea
-            iure, deleniti vitae tempore vero illum! Nihil, nulla quas! Vitae mollitia molestiae eius soluta.</p>
+        <div class="col-12 col-md-5 m-3">
+          <p>Masferreteria es una empresa en continuo crecimiento. Una compañía joven y dinámica que disfruta 
+            con su trabajo y ayudando a los clientes. Contamos con un equipo humano que brinda un servicio impecable 
+            para que cualquier tipo de cliente pueda realizar sus consultas y compras.
+            </p>
         </div>
       </div>
     </div>
@@ -169,28 +314,28 @@
     <div class="contfooter container p-5 ">
       <div class="row respon-foo">
         <div class="col-4 foolink">
-          <p >Nosotros</p>
-          <p >Como Contactarnos</p>
+          <a href="Pages/nosotros.html">Nosotros</a>
+          <a href="Pages/contacto.html">Como Contactarnos</a>
         </div>
 
 
         <div class="col-4 foolink">
-          <p>Productos</p>
-          <p>Informacion</p>
+          <a href="Pages/productos.html">Productos</a>
+          <a href="Pages/nosotros.html">Informacion</a>
         </div>
 
 
         <div class="col-4 foolink">
-          <p >Clientes</p>
-          <p >Reseñas</p>
+          <a href="Pages/clientes.html">Clientes</a>
+          <a href="Pages/clientes.html">Reseñas</a>
         </div>
       </div>
 
     </div>
     <div class="socialsf pb-5">
-      <a href="#"><i class="bi bi-instagram s"></i></a>
-      <a href="#"><i class="bi bi-facebook s"></i></a>
-      <a href="#"><i class="bi bi-whatsapp s"></i></a>
+      <a href="http://instagram.com" target="_blank"><i class="bi bi-instagram s-ig"></i></a>
+      <a href="http://facebook.com" target="_blank"><i class="bi bi-facebook s-fb"></i></a>
+      <a href="http://whatsapp.com" target="_blank"><i class="bi bi-whatsapp s-wpp"></i></a>
     </div>
     <span class="fin p-4">Lucas Figueroa 2022&copy;</span>
     

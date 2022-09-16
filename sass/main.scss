@@ -8,8 +8,30 @@
     box-sizing: border-box;
     font-family: "Saira", sans-serif;
   }
+
+  @import "./nav";
+
+  /* Index */
+  @import "./index_scss/indx-lay";
+  @import "./index_scss/content";
+
+  /* Nosotros */
   @import "./nosotros_scss/usGrid-layt";
-  @import "./nosotros_scss/nav";
-  @import "./nosotros_scss//content";
-  @import "./nosotros_scss/footer";
-  @import "./nosotros_scss/mediaQ";
+  @import "./nosotros_scss/content";
+
+  /* Productos */
+  @import "./productos_scss/prodLay";
+  @import "./productos_scss/content";
+
+  /* Contacto */
+  @import "./contacto_scss/content";
+  @import "./contacto_scss/contLay";
+
+
+  /* Clientes */
+  @import "./clientes_scss/content";
+  @import "./clientes_scss/clienLay";
+
+
+  @import "./footer";
+  @import "./mediaQ";

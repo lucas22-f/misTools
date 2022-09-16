@@ -1,0 +1,33 @@
+.clientes{
+    display: flex;
+    grid-area: content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc107;
+
+
+    .item-client{
+        display: flex;
+        padding: 2%;
+        margin: 3%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        
+
+        .c-img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c-text{
+            width: 60%;
+            padding: 3%;
+        }
+    }
+   
+}

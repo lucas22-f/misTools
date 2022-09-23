@@ -1,6 +1,20 @@
 /* Index - Header */
 @import "../vars";
 
+.indexGrid-layout{
+    display: grid;
+   grid-template-areas: 
+  'nav nav nav'
+  'h h h'
+  'cards cards cards'
+  'if if if'
+  'carr carr carr'
+  'foo foo foo'
+  ;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto auto auto auto auto auto;
+  }
+
 .h-container {
   grid-column: 1/4;
   grid-area: h;
@@ -56,6 +70,7 @@
         text-align: center;
         transition: all .3s;
         border: #bdbcbc 1px solid;
+        width: 330px;
       }
     .card:hover{
         box-shadow: 3px 3px 10px #212121;

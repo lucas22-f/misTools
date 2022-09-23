@@ -1,3 +1,14 @@
+.clientGrid-layout{
+    display: grid;
+    grid-template-areas: 
+   'nav nav nav'
+   'content content content'
+   'foo foo foo'
+   ;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: auto auto auto;
+}
+
 .clientes{
     display: flex;
     grid-area: content;
@@ -22,6 +33,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 300px;
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
         }
 
         .c-text{

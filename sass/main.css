@@ -132,6 +132,7 @@
   text-align: center;
   transition: all 0.3s;
   border: #bdbcbc 1px solid;
+  width: 330px;
 }
 .cardProducts .card:hover {
   box-shadow: 3px 3px 10px #212121;
@@ -273,6 +274,7 @@
 }
 
 .bot:hover, .bot-close:hover {
+  color: #f7e09e;
   box-shadow: 0px 0px 10px #fedb14;
 }
 
@@ -351,6 +353,13 @@
 }
 
 /* Clientes */
+.clientGrid-layout {
+  display: grid;
+  grid-template-areas: "nav nav nav" "content content content" "foo foo foo";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
 .clientes {
   display: flex;
   grid-area: content;
@@ -373,6 +382,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 300px;
+}
+.clientes .item-client .c-img img {
+  width: 100%;
+  border-radius: 50%;
 }
 .clientes .item-client .c-text {
   width: 60%;

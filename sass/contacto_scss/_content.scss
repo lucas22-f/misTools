@@ -1,3 +1,15 @@
+.conctGrid-layout{
+    display: grid;
+    grid-template-areas: 
+   'nav nav nav'
+   'content content content'
+   'add add add'
+   'foo foo foo'
+   ;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: auto auto auto auto;
+}
+
 .contact{
     grid-area: content;
     display: flex;

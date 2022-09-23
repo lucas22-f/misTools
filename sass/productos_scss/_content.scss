@@ -1,4 +1,20 @@
 @import "../vars";
+
+.prodGrid-layout{
+  display: grid;
+ grid-template-areas: 
+'nav nav nav'
+'cards cards cards'
+'pago pago pago'
+'foo foo foo'
+;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto auto auto;
+}
+.pago{
+  grid-area: pago;
+}
+
 .cardProducts{
 
   .cardsTittle{
@@ -41,6 +57,7 @@ $btn-colors:(
   @include bot;
 }
 .bot:hover{
+  color: map-get($btn-colors,text);
   box-shadow: 0px 0px 10px $mainColor;
 }
 .bot-close{
